@@ -156,6 +156,7 @@ python main.py
 * Since we have so many configurations like connection for mongoDB, cloud, etc.
 * So these configuration need to be centralized somewhere. 
 * So we will create a folder that will maintain the connection configuration.
+* All this configuratuin firl will help in respective operations
 
 # Constant folder:
 * Every projects some contants.
@@ -181,4 +182,39 @@ python main.py
 * May be we need some feature engineer, custom function etc which are specific to the ML.
 * For these things we need this folder.
 
-# 
+# pipeline folder:
+* 
+
+
+
+# Step to push into git repository after you clone.
+```bash
+git add .
+```
+
+```bash
+git commit -m "statement"
+```
+
+For main branch:
+```bash
+git push origin main
+```
+or 
+```bash
+git push origin main --force
+```
+
+For master branch:
+```bash
+git push origin master
+```
+or
+```bash
+git push origin master --force
+```
+
+To get the remove url use below command:
+```bash
+git remote -v
+```
