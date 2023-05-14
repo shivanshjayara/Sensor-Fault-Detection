@@ -218,3 +218,9 @@ To get the remove url use below command:
 ```bash
 git remote -v
 ```
+
+
+# connecting mongodb atlas in local use following libraries
+!pip install pymongo[srv]
+!pip install dnspython
+!python -m pip install mongo[srv] dnspython

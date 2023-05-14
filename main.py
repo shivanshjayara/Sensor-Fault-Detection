@@ -1,16 +1,7 @@
 from sensor.configuration.mongo_db_connection import MongoDBClient
 from sensor.exception import SensorException
 import os, sys
-
-def testexception():
-    try:
-        x=1/0
-    except Exception as e:
-        raise SensorException(e,sys)
-
-
-# import os,sys
-# from sensor.logger import logging
+from sensor.logger import logging
 # from sensor.pipeline import training_pipeline
 # from sensor.pipeline.training_pipeline import TrainPipeline
 # import os
@@ -25,6 +16,17 @@ def testexception():
 # from sensor.utils.main_utils import load_object
 # from fastapi.middleware.cors import CORSMiddleware
 # import os
+
+
+
+
+# def testexception():
+#     try:
+#         logging.info("we are dividing 1 by zero")
+#         x=1/0
+#     except Exception as e:
+#         raise SensorException(e,sys)
+
 
 # env_file_path=os.path.join(os.getcwd(),"env.yaml")
 
@@ -96,12 +98,12 @@ def testexception():
 
 
 if __name__=="__main__":
-    # mongo_client=MongoDBClient()
-    # print("Collection name:",mongo_client.database.list_collection_names())
-    #main()
+    mongo_client=MongoDBClient()
+    print("Collection name:",mongo_client.database.list_collection_names())
+    # main()
     # set_env_variable(env_file_path)
     # app_run(app, host=APP_HOST, port=APP_PORT)
-    try:
-        testexception()
-    except Exception as e:
-        print(e)
+    # try:
+    #     testexception()
+    # except Exception as e:
+    #     print(e)
